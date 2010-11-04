@@ -1,3 +1,3 @@
-[submodule "buildtools"]
-	path = buildtools
+[submodule "src/buildtools"]
+	path = src/buildtools
 	url = git://git.wincent.com/buildtools.git
