@@ -27,6 +27,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* fusion_demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fusion_demo-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* fusion-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fusion-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC062D2712835205007BDE49 /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		29B97314FDCFA39411CA2CEA /* fusion-demo */ = {
 			isa = PBXGroup;
 			children = (
+				BC062D26128351F5007BDE49 /* Submodules */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -114,6 +116,14 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC062D26128351F5007BDE49 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				BC062D2712835205007BDE49 /* buildtools */,
+			);
+			name = Submodules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
