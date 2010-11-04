@@ -28,6 +28,10 @@
 		8D1107310486CEB800E47090 /* fusion_demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fusion_demo-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* fusion-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fusion-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC062D2712835205007BDE49 /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
+		BC062DA212835244007BDE49 /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "buildtools/base-style.xcconfig"; sourceTree = "<group>"; };
+		BC062DA312835244007BDE49 /* cocoa-app-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "cocoa-app-target.xcconfig"; path = "buildtools/cocoa-app-target.xcconfig"; sourceTree = "<group>"; };
+		BC062DA412835244007BDE49 /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "buildtools/debug-style.xcconfig"; sourceTree = "<group>"; };
+		BC062DA512835244007BDE49 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BC062D26128351F5007BDE49 /* Submodules */,
+				BC062DA112835227007BDE49 /* Configuration */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -124,6 +129,17 @@
 				BC062D2712835205007BDE49 /* buildtools */,
 			);
 			name = Submodules;
+			sourceTree = "<group>";
+		};
+		BC062DA112835227007BDE49 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BC062DA212835244007BDE49 /* base-style.xcconfig */,
+				BC062DA312835244007BDE49 /* cocoa-app-target.xcconfig */,
+				BC062DA412835244007BDE49 /* debug-style.xcconfig */,
+				BC062DA512835244007BDE49 /* release-style.xcconfig */,
+			);
+			name = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,17 +233,10 @@
 /* Begin XCBuildConfiguration section */
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC062DA312835244007BDE49 /* cocoa-app-target.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = fusion_demo_Prefix.pch;
 				INFOPLIST_FILE = "fusion_demo-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "fusion-demo";
 			};
 			name = Debug;
@@ -235,40 +244,23 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = fusion_demo_Prefix.pch;
 				INFOPLIST_FILE = "fusion_demo-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "fusion-demo";
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC062DA412835244007BDE49 /* debug-style.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC062DA512835244007BDE49 /* release-style.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
