@@ -15,10 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		256AC3D80F4B6AC300CF3369 /* fusion_demoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fusion_demoAppDelegate.h; sourceTree = "<group>"; };
 		256AC3D90F4B6AC300CF3369 /* fusion_demoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fusion_demoAppDelegate.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -31,6 +29,8 @@
 		BC062DA312835244007BDE49 /* cocoa-app-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "cocoa-app-target.xcconfig"; path = "buildtools/cocoa-app-target.xcconfig"; sourceTree = "<group>"; };
 		BC062DA412835244007BDE49 /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "buildtools/debug-style.xcconfig"; sourceTree = "<group>"; };
 		BC062DA512835244007BDE49 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
+		BC062E3912835425007BDE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC062E3A12835430007BDE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +175,7 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* fusion-demo */;
 			projectDirPath = "";
@@ -213,7 +214,7 @@
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				BC062E3912835425007BDE49 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -221,7 +222,7 @@
 		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1DDD58150DA1D0A300B32029 /* English */,
+				BC062E3A12835430007BDE49 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
