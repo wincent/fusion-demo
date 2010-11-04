@@ -31,6 +31,7 @@
 		BC062DA512835244007BDE49 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
 		BC062E3912835425007BDE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC062E3A12835430007BDE49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BC063156128355E6007BDE49 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = ../LICENSE.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		29B97314FDCFA39411CA2CEA /* fusion-demo */ = {
 			isa = PBXGroup;
 			children = (
+				BC063152128355C0007BDE49 /* Documentation */,
 				BC062D26128351F5007BDE49 /* Submodules */,
 				BC062DA112835227007BDE49 /* Configuration */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -138,6 +140,14 @@
 				BC062DA512835244007BDE49 /* release-style.xcconfig */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BC063152128355C0007BDE49 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BC063156128355E6007BDE49 /* LICENSE.txt */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
