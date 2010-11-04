@@ -1,3 +1,6 @@
 [submodule "src/buildtools"]
 	path = src/buildtools
 	url = git://git.wincent.com/buildtools.git
+[submodule "fusion"]
+	path = fusion
+	url = git://git.wincent.com/fusion.git
