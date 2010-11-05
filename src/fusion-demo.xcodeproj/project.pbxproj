@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		BC063175128358E3007BDE49 /* Fusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		BC06318F128359B6007BDE49 /* Fusion.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
 		BCDDDACA12837BE40059C6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		BCDDDB6C12848A3E0059C6BB /* Fusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDDDACA12837BE40059C6BB /* Foundation.framework in Frameworks */,
-				BC063175128358E3007BDE49 /* Fusion.framework in Frameworks */,
+				BCDDDB6C12848A3E0059C6BB /* Fusion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
