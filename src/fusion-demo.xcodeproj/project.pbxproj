@@ -289,6 +289,10 @@
 			baseConfigurationReference = BC062DA312835244007BDE49 /* cocoa-app-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_NAME = "fusion-demo";
 			};
 			name = Debug;
@@ -297,6 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_NAME = "fusion-demo";
 			};
 			name = Release;
