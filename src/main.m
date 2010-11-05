@@ -26,5 +26,7 @@
 
 int main(int argc, char *argv[])
 {
+    WOFPlugInManager *manager = [WOFPlugInManager sharedManager];
+    NSLog(@"manager %@, plugins %@", manager, [manager plugIns]);
     return 0;
 }
