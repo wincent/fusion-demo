@@ -27,8 +27,13 @@
 int main(int argc, char *argv[])
 {
     WOFPlugInManager *manager = [WOFPlugInManager sharedManager];
-    NSLog(@"manager %@, plugins %@", manager, [manager plugIns]);
     NSError *error = [manager loadAllPlugIns];
-    NSLog(@"loadAllPlugIns -> %@", error);
-    return 0;
+    if (error)
+    {
+        NSLog(@"error %ld %@: %@ (%@)", [error code], [error domain],
+              [error localizedDescription], [error localizedFailureReason]);
+        return EXIT_FAILURE;
+    }
+    else
+        return EXIT_SUCCESS;
 }
