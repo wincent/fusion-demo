@@ -4,3 +4,6 @@
 [submodule "fusion"]
 	path = fusion
 	url = git://git.wincent.com/fusion.git
+[submodule "fusion-base"]
+	path = fusion-base
+	url = git://git.wincent.com/fusion-base.git
