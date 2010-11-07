@@ -11,6 +11,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		BC06318F128359B6007BDE49 /* Fusion.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
 		BC247F3C1285BBCF00D91727 /* WOFBase.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC247F311285BB8A00D91727 /* WOFBase.bundle */; };
+		BC7DE35C12871E960027C712 /* WOFMenu.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC7DE35112871E6C0027C712 /* WOFMenu.bundle */; };
 		BCDDDACA12837BE40059C6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		BCDDDB6C12848A3E0059C6BB /* Fusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
 /* End PBXBuildFile section */
@@ -34,15 +35,29 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8D576316048677EA00EA77CD /* WOFBase.bundle */;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
 			remoteInfo = "fusion-base";
 		};
 		BC247F381285BBA100D91727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D57630D048677EA00EA77CD /* fusion-base */;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
 			remoteInfo = "fusion-base";
+		};
+		BC7DE35012871E6C0027C712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD /* WOFMenu.bundle */;
+			remoteInfo = "fusion-menu";
+		};
+		BC7DE35412871E8A0027C712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD /* fusion-menu */;
+			remoteInfo = "fusion-menu";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,6 +80,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				BC247F3C1285BBCF00D91727 /* WOFBase.bundle in Copy Plug-ins */,
+				BC7DE35C12871E960027C712 /* WOFMenu.bundle in Copy Plug-ins */,
 			);
 			name = "Copy Plug-ins";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +104,7 @@
 		BC063156128355E6007BDE49 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = ../LICENSE.txt; sourceTree = SOURCE_ROOT; };
 		BC063169128358BF007BDE49 /* Fusion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fusion.xcodeproj; path = ../fusion/Fusion.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-base.xcodeproj"; path = "../fusion-base/fusion-base.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-menu.xcodeproj"; path = "../fusion-menu/fusion-menu.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +209,7 @@
 		BC063168128358B0007BDE49 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */,
 				BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */,
 				BC063169128358BF007BDE49 /* Fusion.xcodeproj */,
 			);
@@ -214,6 +232,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC7DE34D12871E6C0027C712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DE35112871E6C0027C712 /* WOFMenu.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +258,7 @@
 			dependencies = (
 				BC063174128358D3007BDE49 /* PBXTargetDependency */,
 				BC247F391285BBA100D91727 /* PBXTargetDependency */,
+				BC7DE35512871E8A0027C712 /* PBXTargetDependency */,
 			);
 			name = "fusion-demo";
 			productInstallPath = "$(HOME)/Applications";
@@ -263,6 +290,10 @@
 					ProjectRef = BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */;
 				},
 				{
+					ProductGroup = BC7DE34D12871E6C0027C712 /* Products */;
+					ProjectRef = BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */;
+				},
+				{
 					ProductGroup = BC06316A128358BF007BDE49 /* Products */;
 					ProjectRef = BC063169128358BF007BDE49 /* Fusion.xcodeproj */;
 				},
@@ -287,6 +318,13 @@
 			fileType = wrapper.cfbundle;
 			path = WOFBase.bundle;
 			remoteRef = BC247F301285BB8A00D91727 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC7DE35112871E6C0027C712 /* WOFMenu.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WOFMenu.bundle;
+			remoteRef = BC7DE35012871E6C0027C712 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -323,6 +361,11 @@
 			isa = PBXTargetDependency;
 			name = "fusion-base";
 			targetProxy = BC247F381285BBA100D91727 /* PBXContainerItemProxy */;
+		};
+		BC7DE35512871E8A0027C712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "fusion-menu";
+			targetProxy = BC7DE35412871E8A0027C712 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
