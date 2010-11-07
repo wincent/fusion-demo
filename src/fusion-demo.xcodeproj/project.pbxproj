@@ -12,6 +12,7 @@
 		BC06318F128359B6007BDE49 /* Fusion.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
 		BC247F3C1285BBCF00D91727 /* WOFBase.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC247F311285BB8A00D91727 /* WOFBase.bundle */; };
 		BC506DA9128759A7006F0550 /* WOFCrashReporter.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC506DA612875993006F0550 /* WOFCrashReporter.bundle */; };
+		BC506F3512875EC7006F0550 /* WOFHelp.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC506F2C12875EB1006F0550 /* WOFHelp.bundle */; };
 		BC7DE35C12871E960027C712 /* WOFMenu.bundle in Copy Plug-ins */ = {isa = PBXBuildFile; fileRef = BC7DE35112871E6C0027C712 /* WOFMenu.bundle */; };
 		BCDDDACA12837BE40059C6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		BCDDDB6C12848A3E0059C6BB /* Fusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC063172128358BF007BDE49 /* Fusion.framework */; };
@@ -50,15 +51,29 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8D5B49B6048680CD000E48DA /* WOFCrashReporter.bundle */;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = "fusion-crash-reporter";
 		};
 		BC506DA71287599E006F0550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA /* fusion-crash-reporter */;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "fusion-crash-reporter";
+		};
+		BC506F2B12875EB1006F0550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA /* WOFHelp.bundle */;
+			remoteInfo = "fusion-help";
+		};
+		BC506F2F12875EB9006F0550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA /* fusion-help */;
+			remoteInfo = "fusion-help";
 		};
 		BC7DE35012871E6C0027C712 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,6 +112,7 @@
 				BC506DA9128759A7006F0550 /* WOFCrashReporter.bundle in Copy Plug-ins */,
 				BC247F3C1285BBCF00D91727 /* WOFBase.bundle in Copy Plug-ins */,
 				BC7DE35C12871E960027C712 /* WOFMenu.bundle in Copy Plug-ins */,
+				BC506F3512875EC7006F0550 /* WOFHelp.bundle in Copy Plug-ins */,
 			);
 			name = "Copy Plug-ins";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +137,7 @@
 		BC063169128358BF007BDE49 /* Fusion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fusion.xcodeproj; path = ../fusion/Fusion.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-base.xcodeproj"; path = "../fusion-base/fusion-base.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-crash-reporter.xcodeproj"; path = "../fusion-crash-reporter/fusion-crash-reporter.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-help.xcodeproj"; path = "../fusion-help/fusion-help.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fusion-menu.xcodeproj"; path = "../fusion-menu/fusion-menu.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -226,6 +243,7 @@
 		BC063168128358B0007BDE49 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */,
 				BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */,
 				BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */,
 				BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */,
@@ -258,6 +276,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC506F2512875EB1006F0550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC506F2C12875EB1006F0550 /* WOFHelp.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BC7DE34D12871E6C0027C712 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +312,7 @@
 				BC247F391285BBA100D91727 /* PBXTargetDependency */,
 				BC7DE35512871E8A0027C712 /* PBXTargetDependency */,
 				BC506DA81287599E006F0550 /* PBXTargetDependency */,
+				BC506F3012875EB9006F0550 /* PBXTargetDependency */,
 			);
 			name = "fusion-demo";
 			productInstallPath = "$(HOME)/Applications";
@@ -319,6 +346,10 @@
 				{
 					ProductGroup = BC506DA212875993006F0550 /* Products */;
 					ProjectRef = BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */;
+				},
+				{
+					ProductGroup = BC506F2512875EB1006F0550 /* Products */;
+					ProjectRef = BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */;
 				},
 				{
 					ProductGroup = BC7DE34D12871E6C0027C712 /* Products */;
@@ -356,6 +387,13 @@
 			fileType = wrapper.cfbundle;
 			path = WOFCrashReporter.bundle;
 			remoteRef = BC506DA512875993006F0550 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC506F2C12875EB1006F0550 /* WOFHelp.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WOFHelp.bundle;
+			remoteRef = BC506F2B12875EB1006F0550 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		BC7DE35112871E6C0027C712 /* WOFMenu.bundle */ = {
@@ -404,6 +442,11 @@
 			isa = PBXTargetDependency;
 			name = "fusion-crash-reporter";
 			targetProxy = BC506DA71287599E006F0550 /* PBXContainerItemProxy */;
+		};
+		BC506F3012875EB9006F0550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "fusion-help";
+			targetProxy = BC506F2F12875EB9006F0550 /* PBXContainerItemProxy */;
 		};
 		BC7DE35512871E8A0027C712 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
