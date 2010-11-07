@@ -7,3 +7,18 @@
 [submodule "fusion-base"]
 	path = fusion-base
 	url = git://git.wincent.com/fusion-base.git
+[submodule "fusion-menu"]
+	path = fusion-menu
+	url = git://git.wincent.com/fusion-menu.git
+[submodule "fusion-prefs"]
+	path = fusion-prefs
+	url = git://git.wincent.com/fusion-prefs.git
+[submodule "fusion-help"]
+	path = fusion-help
+	url = git://git.wincent.com/fusion-help.git
+[submodule "fusion-updater"]
+	path = fusion-updater
+	url = git://git.wincent.com/fusion-updater.git
+[submodule "fusion-crash-reporter"]
+	path = fusion-crash-reporter
+	url = git://git.wincent.com/fusion-crash-reporter.git
