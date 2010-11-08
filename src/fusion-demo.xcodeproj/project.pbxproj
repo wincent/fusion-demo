@@ -95,14 +95,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BC50727912876462006F0550 /* fusion-updater.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8D5B49B6048680CD000E48DA /* WOFUpdater.bundle */;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
 			remoteInfo = "fusion-updater";
 		};
 		BC50728312876474006F0550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC50727912876462006F0550 /* fusion-updater.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D5B49AC048680CD000E48DA /* fusion-updater */;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
 			remoteInfo = "fusion-updater";
 		};
 		BC7DE35012871E6C0027C712 /* PBXContainerItemProxy */ = {
@@ -277,13 +277,13 @@
 		BC063168128358B0007BDE49 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				BC50727912876462006F0550 /* fusion-updater.xcodeproj */,
-				BC50710712876171006F0550 /* fusion-prefs.xcodeproj */,
-				BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */,
-				BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */,
-				BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */,
-				BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */,
 				BC063169128358BF007BDE49 /* Fusion.xcodeproj */,
+				BC247F2C1285BB8A00D91727 /* fusion-base.xcodeproj */,
+				BC506DA112875993006F0550 /* fusion-crash-reporter.xcodeproj */,
+				BC506F2412875EB1006F0550 /* fusion-help.xcodeproj */,
+				BC7DE34C12871E6C0027C712 /* fusion-menu.xcodeproj */,
+				BC50710712876171006F0550 /* fusion-prefs.xcodeproj */,
+				BC50727912876462006F0550 /* fusion-updater.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
