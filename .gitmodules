@@ -22,3 +22,6 @@
 [submodule "fusion-crash-reporter"]
 	path = fusion-crash-reporter
 	url = git://git.wincent.com/fusion-crash-reporter.git
+[submodule "fusion-meta"]
+	path = fusion-meta
+	url = git://git.wincent.com/fusion-meta.git
